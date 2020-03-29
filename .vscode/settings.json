@@ -1,0 +1,10 @@
+{
+  "php-cs-fixer.executablePath": "C:\\Users\\uchida\\.vscode\\extensions\\junstyle.php-cs-fixer-0.1.151\\php-cs-fixer.phar",
+  "php-cs-fixer.executablePathWindows": "C:\\Users\\uchida\\.vscode\\extensions\\junstyle.php-cs-fixer-0.1.151\\php-cs-fixer.phar",
+  "php-cs-fixer.formatHtml": true,
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2",
+  "php-cs-fixer.exclude": [
+  
+  ]
+}
