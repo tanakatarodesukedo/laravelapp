@@ -1,0 +1,7 @@
+{
+  "php-cs-fixer.executablePath": "~/.vscode/extensions/junstyle.php-cs-fixer-0.1.143/php-cs-fixer.phar",
+  "php-cs-fixer.executablePathWindows": "~/.vscode/extensions/junstyle.php-cs-fixer-0.1.143/php-cs-fixer.phar",
+  "php-cs-fixer.formatHtml": true,
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2"
+}
