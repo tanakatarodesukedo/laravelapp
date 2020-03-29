@@ -23,7 +23,7 @@
 
         hr {
             margin: 25px 100px;
-            border-top: 1px dashed #ddd;
+            border-top: dashed 1px #ddd;
         }
 
         .menutitle {
@@ -51,7 +51,9 @@
     @section('menubar')
     <h2 class="menutitle">※メニュー</h2>
     <ul>
-        <li>@show</li>
+        <li>
+    @show
+    </li>
     </ul>
     <hr size="1" />
     <div class="content">

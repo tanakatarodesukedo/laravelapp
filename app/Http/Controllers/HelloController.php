@@ -25,7 +25,11 @@ function tag($tag, $txt)
 class HelloController extends Controller
 {
     public function index() {
-        $data = ['one', 'two', 'three', 'four', 'five'];
+        $data = [
+            ['name'=>'山田たろう', 'mail'=>'taro@yamada'],
+            ['name'=>'田中はなこ', 'mail'=>'hanako@flower'],
+            ['name'=>'鈴木さちこ', 'mail'=>'sachiko@happy']
+        ];
         return view('hello.index', ['data'=>$data]);
     }
 
@@ -36,12 +40,4 @@ class HelloController extends Controller
         ];
         return view('hello.index', $data);
     }
-
-    // public function __invoke() {
-    //     global $head, $style, $body, $end;
-    //     return $head . tag('title', 'Hello') . $style . $body . 
-    //         tag('h1', 'Single Action') . 
-    //         tag('p', 'これは、シングルアクションのコントローラのアクションです。') . 
-    //         $body . $end;
-    // }
 }
