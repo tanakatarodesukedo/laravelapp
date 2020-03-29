@@ -18,7 +18,7 @@
         }
 
         ul {
-            font-size:12pt;
+            font-size: 12pt;
         }
 
         hr {
@@ -52,8 +52,8 @@
     <h2 class="menutitle">※メニュー</h2>
     <ul>
         <li>
-    @show
-    </li>
+            @show
+        </li>
     </ul>
     <hr size="1" />
     <div class="content">
