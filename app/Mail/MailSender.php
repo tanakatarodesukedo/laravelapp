@@ -35,12 +35,19 @@ class MailSender extends Mailable
      */
     public function build()
     {
+        $this->to($this->addressTo)->subject($this->title)
+        ->text('emails.contact_text')->with(['msg' => $this->message]);
+
         $attachment = $this->attachment;
-        return $this->to($this->addressTo)->subject($this->title)
-            ->text('emails.contact_text')->with(['msg' => $this->message])
-            ->attach($attachment['tmp_name'], [
-                'as' => $attachment['name'],
-                'mime' => $attachment['type']
-            ]);
+        if ($attachment['size'] > 0) {
+            $this->attach(
+                $attachment['tmp_name'],
+                [
+                    'as' => $attachment['name'],
+                    'mime' => $attachment['type']
+                ]
+            );
+        }
+        return $this;
     }
 }

@@ -61,18 +61,18 @@ class SnappersController extends Controller
                 $image = new Image;
                 $image->type = $attachment['type'];
                 $image->convertImageToBinary($filename)->save();
+            }
 
-                if (isset($request->email)) {
-                    // メール送信
-                    Mail::send(
-                        new MailSender(
-                            $_REQUEST['email'],
-                            '判定のご依頼',
-                            $_REQUEST['message'],
-                            $_FILES['attachment']
-                        )
-                    );
-                }
+            if (isset($request->email)) {
+                // メール送信
+                Mail::send(
+                    new MailSender(
+                        $_REQUEST['email'],
+                        '判定のご依頼',
+                        $_REQUEST['message'],
+                        $_FILES['attachment']
+                    )
+                );
             }
         }
         return $retJson;

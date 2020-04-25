@@ -1,3 +1,4 @@
 標記の件、ご連絡いたします。
-
-{{$msg . "\n"}}
+@unless($msg == '')
+{{"\n" . $msg}}
+@endunless
