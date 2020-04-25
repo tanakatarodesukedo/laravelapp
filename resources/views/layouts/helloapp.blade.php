@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <title>@yield('title')</title>
     <style>
         body {
@@ -44,21 +45,22 @@
             color: #ccc;
         }
 
-        th{
+        th {
             background-color: #999;
             color: fff;
             padding: 5px 10px;
         }
 
-        td{
+        td {
             border: solid 1px #aaa;
             color: #999;
             padding: 5px 10px;
         }
     </style>
-    
+
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+    <script src="{{asset('js/jquery-3.5.0.min.js')}}"></script>
 </head>
 
 <body>
@@ -77,6 +79,9 @@
     <div class="footer">
         @yield('footer')
     </div>
+
+    @yield('script')
+
 </body>
 
 </html>

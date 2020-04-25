@@ -412,6 +412,10 @@ a img:hover {
   display: none;
 }
 
+input::placeholder {
+  color: silver;
+}
+
 @media screen and (max-width:600px) {
   /* 画面サイズが600px以下の場合に適用 */
   body {

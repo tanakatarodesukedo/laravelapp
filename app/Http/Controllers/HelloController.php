@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Person;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\View;
 
 global $head, $style, $body, $end;
 $head = '<html><head>';
@@ -33,6 +34,16 @@ class HelloController extends Controller
         $items = Person::orderBy($sort, 'asc')->paginate(5);
         $param = ['items' => $items, 'sort' => $sort, 'user' => $user];
         return view('hello.index', $param);
+    }
+
+    public function getDetailData(Request $request)
+    {
+        $sort = $request->sort;
+        $items = Person::orderBy($sort, 'asc')->paginate(5);
+        $param = ['items' => $items, 'sort' => $sort];
+        return [
+            'partialView' => View::make('components.hello_table', $param)->render()
+        ];
     }
 
     public function post(Request $request)

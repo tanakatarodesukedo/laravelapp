@@ -58,11 +58,12 @@
         </dd>
         <dt>お問合せ種別</dt>
         <dd>
-          <select name="type" class="type">
+          <input type="text" name="type" class="type" list="type" placeholder="ComboBoxだモン" />
+          <datalist id="type">
             <option value="撮影のご依頼">撮影のご依頼</option>
             <option value="講演・各種メディア出演のご依頼">講演・各種メディア出演のご依頼</option>
             <option value="その他お問い合わせ">その他お問い合わせ</option>
-          </select>
+          </datalist>
         </dd>
         <dt>ご希望のご連絡方法</dt>
         <dd>
