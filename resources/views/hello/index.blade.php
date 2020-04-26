@@ -15,7 +15,7 @@
         color: white;
     }
 
-    nav {
+    nav#pager {
         margin: 10px 0px 0px 10px;
     }
 </style>
