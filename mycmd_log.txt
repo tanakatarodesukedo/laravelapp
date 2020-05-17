@@ -1,0 +1,13 @@
+[2020/05/20  9:45:34.98] This is MyCmd.bat. 
+[2020/05/20 10:23:18.73] This is MyCmd.bat. 
+[2020/05/20 10:30:29.74] This is MyCmd.bat. 
+[2020/05/20 10:47:54.90] This is MyCmd.bat. 
+[2020/05/20 10:48:35.27] This is MyCmd.bat. 
+[2020/05/20 10:58:57.61] This is MyCmd.bat. 
+[2020/05/20 11:10:39.66] This is MyCmd.bat. 
+[2020/05/20 11:18:55.20] This is MyCmd.bat. 
+[2020/05/20 11:22:43.08] This is MyCmd.bat. 
+[2020/05/20 11:24:13.76] This is MyCmd.bat. 
+[2020/05/20 11:30:00.08] This is MyCmd.bat. 
+[2020/05/23 11:31:33.66] This is MyCmd.bat. 
+[2020/05/24 11:30:02.13] This is MyCmd.bat. 
